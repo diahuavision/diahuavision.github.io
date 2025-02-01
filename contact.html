@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.jpg" alt="شعار الموقع" class="logo">
+            <ul id="menu">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="work.html">أعمالنا</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    
+
+    <section class="contact-form">
+        <h2>اتصل بنا</h2>
+        <form action="https://formsubmit.co/diahuavision@gmail.com" method="POST">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder=" " required>
+                <label for="name">الاسم </label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">البريد الإلكتروني</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="message" placeholder=" " required></textarea>
+                <label for="message">اكتب رسالتك هنا...</label>
+            </div>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+    
+</body>
+</html>
